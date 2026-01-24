@@ -1,9 +1,16 @@
+
 services:
   postgres:
-    image: 'postgres:latest'
+    image: postgres:16
+    container_name: receiptwise-postgres
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      POSTGRES_DB: receiptwise
+      POSTGRES_USER: receiptwise
+      POSTGRES_PASSWORD: receiptwise
     ports:
-      - '5432'
+      - "5432:5432"
+    volumes:
+      - receiptwise_pgdata:/var/lib/postgresql/data
+
+volumes:
+  receiptwise_pgdata:

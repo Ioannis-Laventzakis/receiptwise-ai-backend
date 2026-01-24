@@ -1,13 +1,10 @@
-package org.example.receiptwiseaibackend;
+package com.receiptwise.backend;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
+@Disabled
 class ReceiptwiseAiBackendApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
 }

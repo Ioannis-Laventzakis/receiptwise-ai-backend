@@ -31,3 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### MacOS ###
+APP_PORT=8081
+DB_NAME=receiptwise
+DB_USER=receiptwise
+DB_PASSWORD=receiptwise
+DB_PORT=5432
+
+# Local secrets / env
+.env
+.env.*
+*.local
+application-local.yml
+application-local.properties
