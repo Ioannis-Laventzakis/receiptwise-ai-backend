@@ -1,3 +1,4 @@
+// Initial migration to create the expenses table
 create table if not exists expenses (
                                         id bigserial primary key,
                                         title varchar(255) not null,
